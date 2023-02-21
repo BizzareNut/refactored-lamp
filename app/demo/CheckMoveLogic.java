@@ -12,36 +12,36 @@ public class CheckMoveLogic {
 
 	public static void executeDemo(ActorRef out) {
 		
-		// Draw two tiles to move between
+		// Draw two tiles to move between 勾勒两块砖
 		Tile tile = BasicObjectBuilders.loadTile(3, 2);
 		BasicCommands.drawTile(out, tile, 0);	
 		Tile tile2 = BasicObjectBuilders.loadTile(5, 4);
 		BasicCommands.drawTile(out, tile2, 0);
 	
-		// Draw a unit
+		// Draw a unit 勾勒一个unit
 		Unit unit = BasicObjectBuilders.loadUnit(StaticConfFiles.humanAvatar, 0, Unit.class);
 		unit.setPositionByTile(tile); 
 		BasicCommands.drawUnit(out, unit, tile);
 		
-		// Move unit, default, horizontal then vertical
+		// Move unit, default, horizontal then vertical 移动unit横向然后纵向
 		BasicCommands.moveUnitToTile(out, unit, tile2);
 		unit.setPositionByTile(tile2); 
 		
 		try {Thread.sleep(4000);} catch (InterruptedException e) {e.printStackTrace();}
 		
-		// Move unit, default, horizontal then vertical
+		// Move unit, default, horizontal then vertical 移动unit
 		BasicCommands.moveUnitToTile(out, unit, tile);
 		unit.setPositionByTile(tile); 
 		
 		try {Thread.sleep(4000);} catch (InterruptedException e) {e.printStackTrace();}
 		
-		// Move unit, alternative, vertical then horizontal
+		// Move unit, alternative, vertical then horizontal  移动unit
 		BasicCommands.moveUnitToTile(out, unit, tile2, true);
 		unit.setPositionByTile(tile2); 
 		
 		try {Thread.sleep(4000);} catch (InterruptedException e) {e.printStackTrace();}
 		
-		// Move unit, alternative, vertical then horizontal
+		// Move unit, alternative, vertical then horizontal 移动unit
 		BasicCommands.moveUnitToTile(out, unit, tile, true);
 		unit.setPositionByTile(tile); 
 		

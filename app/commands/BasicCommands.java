@@ -204,6 +204,7 @@ public class BasicCommands {
 	
 	/**
 	 * This will delete a unit instance from the board. It takes as input the unit object of the unit.
+	 * 这将从板上中删除一个单元实例。它的输入是该单元的单元对象
 	 * @param out
 	 * @param unit
 	 */
@@ -224,6 +225,7 @@ public class BasicCommands {
 	 * This command changes the visualised health value in the player’s information card to a value between 0 
 	 * and 20. The command takes in a basic player instance. The associated values are read from the basic player 
 	 * object.
+	 * 这个命令将玩1家信息卡中的可视化健康值改为0和20之间的数值。该命令接收了一个基本玩家实例。相关的值从基本玩家对象中读取。
 	 * @param out
 	 * @param player
 	 */
@@ -243,7 +245,7 @@ public class BasicCommands {
 	/**
 	 * This command changes the visualised health value in the player’s information card to a value between 0 
 	 * and 20. The command takes in a basic player instance. The associated values are read from the basic player 
-	 * object.
+	 * object.这个命令将玩家2信息卡中的可视化健康值改为0*和20之间的数值。
 	 * @param out
 	 * @param player
 	 */
@@ -263,7 +265,7 @@ public class BasicCommands {
 	/**
 	 * This command changes the visualised mana value in the player’s information card to a value between 0 
 	 * and 9. The command takes in a basic player instance. The associated values are read from the basic player 
-	 * object.
+	 * object.该命令将玩家1信息卡中可视化的法力值改为0*和9之间的数值
 	 * @param out
 	 * @param player
 	 */
@@ -284,6 +286,7 @@ public class BasicCommands {
 	 * This command changes the visualised mana value in the player’s information card to a value between 0 
 	 * and 9. The command takes in a basic player instance. The associated values are read from the basic player 
 	 * object.
+	 * 该命令将玩家2信息卡中可视化的法力值改为0*和9之间的数值
 	 * @param out
 	 * @param player
 	 */
@@ -304,6 +307,8 @@ public class BasicCommands {
 	 * This command renders a card in the player’s hand. It takes as input a hand position (a value between 1-6), a 
 	 * Card (which is an object containing basic information needed to visualise that card) and a visualisation mode 
 	 * (similarly to a tile). This command can be issued multiple times to change the visualisation mode of a card.
+	 * 这个命令渲染玩家手中的牌。它需要输入一个手牌位置（1-6之间的数值），一个牌（这是一个包含可视化该牌的基本信息的对象）和一个可视化模式（类似于瓦片）。
+	 * 这个命令可以多次发出，以改变一张牌的可视化模式。
 	 * @param out
 	 * @param card
 	 * @param position
@@ -326,6 +331,7 @@ public class BasicCommands {
 	
 	/**
 	 * This command deletes a card in the player’s hand. It takes as input a hand position (a value between 1-6).
+	 * 这条命令删除了玩家手中的一张牌。它需要输入一个手牌位置（1-6之间的数值）。
 	 * @param out
 	 * @param position
 	 */
@@ -344,6 +350,7 @@ public class BasicCommands {
 	/**
 	 * Plays a specified EffectAnimation (such as an explosion) centred on a particular Tile. It takes as input an 
 	 * EffectAnimation (an object with information about rendering the effect) and a target Tile.
+	 * 播放一个指定的效果动画（例如爆炸），以特定的瓦片为中心。它的输入是一个EffectAnimation（一个有渲染效果信息的对象）和一个目标瓦片。
 	 * @param out
 	 * @param effect
 	 * @param tile
@@ -366,6 +373,7 @@ public class BasicCommands {
 	 * This command creates a notification box next to the portrait for the player 1 which contains
 	 * the specified text. It will be displayed for a number of seconds before being removed.
 	 * object.
+	 * 这个命令在玩家1的肖像旁边创建一个通知框，其中包含指定的文字。它将显示若干秒后被删除
 	 * @param out
 	 * @param text
 	 * @param displayTimeSeconds
