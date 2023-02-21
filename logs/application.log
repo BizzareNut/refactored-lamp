@@ -1,0 +1,13 @@
+2023-02-19 14:09:50,590 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-5 - Slf4jLogger started
+2023-02-19 14:09:50,709 [INFO] from org.hibernate.validator.internal.util.Version in play-dev-mode-akka.actor.default-dispatcher-15 - HV000001: Hibernate Validator 6.1.0.Final
+2023-02-19 14:09:50,903 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-15 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    play.filters.csrf.CSRFFilter
+
+2023-02-19 14:09:50,908 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-15 - Application started (Dev) (no global state)
+2023-02-19 18:01:00,466 [INFO] from play.core.server.AkkaHttpServer in play-dev-mode-shutdown-hook-1 - Stopping Akka HTTP server...
+2023-02-19 18:01:00,528 [INFO] from play.core.server.AkkaHttpServer in play-dev-mode-akka.actor.internal-dispatcher-37 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2023-02-19 18:01:00,683 [INFO] from play.core.server.AkkaHttpServer in play-dev-mode-akka.actor.internal-dispatcher-39 - Running provided shutdown stop hooks
